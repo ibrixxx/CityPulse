@@ -20,13 +20,23 @@ echo "EXPO_PUBLIC_TICKETMASTER_API_KEY=YOUR_KEY_HERE" > .env
 
 Expo automatically loads `.env` for `EXPO_PUBLIC_*` variables.
 
-3) Run the app
+3) Run a development build (required)
+
+This app uses native modules (Expo Maps, Local Authentication), so you must run a dev build instead of Expo Go.
 
 ```bash
+npx expo install expo-dev-client
+npm i -g eas-cli && eas login
+# iOS
+eas build --platform ios --profile development
+# Android
+eas build --platform android --profile development
+
+# After installing the build on device/simulator, start the dev server
 npx expo start
 ```
 
-Open on iOS simulator, Android emulator, or Expo Go.
+Open the development build and connect it to the running Metro server.
 
 ## Features
 
@@ -65,7 +75,7 @@ Open on iOS simulator, Android emulator, or Expo Go.
 
 ```bash
 npm install          # install deps
-npx expo start       # run
+npx expo start       # start Metro (use with the development build)
 npm run lint         # lint
 ```
 
