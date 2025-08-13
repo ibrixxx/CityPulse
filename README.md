@@ -2,6 +2,8 @@
 
 City Pulse is an Expo app that lets you discover local events using the Ticketmaster Discovery API. It features event search by keyword and city, detailed event pages, favourites, language toggle (English/Arabic with RTL), a simple profile, and optional mock authentication.
 
+https://www.dropbox.com/scl/fi/3d3rcpnm1v08wty7haqry/ScreenRecording_08-13-2025-3.MP4?rlkey=01lehqclqgjdqv3qbpef8l2m5&st=iv2xoyyk&dl=0
+
 ## Setup
 
 1) Install dependencies
@@ -78,7 +80,3 @@ npm install          # install deps
 npx expo start       # start Metro (use with the development build)
 npm run lint         # lint
 ```
-
-## Live link
-
-- If hosted with EAS or Expo, add the link here. For now, run locally with the commands above.
